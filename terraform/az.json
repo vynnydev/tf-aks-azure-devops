@@ -1,0 +1,16 @@
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fb90852a-9424-4581-80db-a08f718c9206",
+    "id": "d7a8be55-b73f-4c1d-a811-c8574a724f49",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Azure subscription 1",
+    "state": "Enabled",
+    "tenantId": "fb90852a-9424-4581-80db-a08f718c9206",
+    "user": {
+      "name": "tfk8scloud@gmail.com",
+      "type": "user"
+    }
+  }
+]
