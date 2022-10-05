@@ -1,4 +1,4 @@
-### Terraform AKS Azure DevOps Project 👋
+### Python Terraform AKS Azure DevOps Project 👋
 <br/>
 <p align="center">
 
@@ -8,4 +8,4 @@
 
 </p>
 
-#### Terraform with AKS, Container Registry & Azure DevOps Pipeline.
+#### Application build in Python with Clean Architecture, PyLint, PyTest, Pre-commit Kubernetes & Terraform with AKS, Container Registry & Azure DevOps Pipeline on cloud.
