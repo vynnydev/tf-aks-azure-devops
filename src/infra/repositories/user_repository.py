@@ -26,9 +26,8 @@ class UserRepository:
                 return insertData(
                     id=new_user.id, name=new_user.name, password=new_user.password
                 )
-            except db_connection:
+            except:
                 db_connection.session.rollback()
-                raise
             finally:
                 db_connection.session.close()
 
