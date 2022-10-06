@@ -20,7 +20,6 @@ class DBConnectionHandler:
     def __enter__(self):
         engine = create_engine(self.__connection_string)
         session_maker = sessionmaker()
-
         self.session = session_maker(bind=engine)
         return self
 
