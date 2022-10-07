@@ -3,10 +3,11 @@ from typing import List
 from sqlalchemy.orm.exc import NoResultFound
 from src.domain.models import Users as UsersModel
 from src.infra.config import DBConnectionHandler
+from src.data.interfaces.repositories import UserRepositoryInterface
 from src.infra.entities import Users as UsersEntity
 
 
-class UserRepository:
+class UserRepository(UserRepositoryInterface):
     """Class to manage User Repository"""
 
     @classmethod  # especificando como método de classe
