@@ -1,5 +1,5 @@
 from typing import Type, Dict
-from src.domain.use_cases_interfaces import RegisterUserInterface
+from src.domain.use_cases import RegisterUserInterface
 from src.data.interfaces.repositories import UserRepositoryInterface
 from src.domain.models import Users as UsersModel
 
@@ -7,8 +7,8 @@ from src.domain.models import Users as UsersModel
 class RegisterUser(RegisterUserInterface):
     """Class to define user case for register user"""
 
-    def __init__(self, user_repository: Type[UserRepositoryInterface]):
-        self.user_repository = user_repository
+    def __init__(self, user_repository_interface: Type[UserRepositoryInterface]):
+        self.user_repository_interface = user_repository_interface
 
     def register(self, name: str, password: str) -> Dict[bool, UsersModel]:
         """Register user case
@@ -21,6 +21,6 @@ class RegisterUser(RegisterUserInterface):
         validate_entry = isinstance(name, str) and isinstance(password, str)
 
         if validate_entry:
-            response = self.user_repository.insert_user(name, password)
+            response = self.user_repository_interface.insert_user(name, password)
 
         return {"Success": validate_entry, "Data": response}

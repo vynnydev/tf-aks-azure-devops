@@ -1,6 +1,6 @@
 from faker import Faker
 from src.infra.repositories.spies import UserRepositorySpy
-from .register_user import RegisterUser
+from ..register_user import RegisterUser
 
 faker = Faker()
 

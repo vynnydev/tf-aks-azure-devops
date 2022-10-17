@@ -9,3 +9,5 @@
 </p>
 
 #### Application build in Python with Clean Architecture, PyLint, PyTest, Pre-commit Kubernetes & Terraform with AKS, Container Registry & Azure DevOps Pipeline on cloud.
+
+### IN DEPLOYMENT
